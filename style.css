@@ -1,0 +1,205 @@
+ html, body {
+    margin: 30px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+ }
+
+ html {
+    height: 100%;
+    background-color: #46f71a;
+ }
+ .gallery img{
+    width: 50%;
+ }
+H1{font-family: cursive;
+   color: rgb(3, 58, 24);}
+ *{box-sizing: border-box;}
+  
+   .mySlides {
+      display: none;
+      position: relative;
+ }
+ #header img{
+    display: circular;
+    margin: auto;
+    height: 70%;
+    padding-top: 0px;
+    position:left;
+    position: relative;
+ }
+ .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+ }
+
+   .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #0e0d0d;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+   }
+   .active, .dot:hover {
+      background-color: #717171;
+   }
+   .fade {
+      animation: fade 1.5s;
+   }
+   @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+   }
+ #menu{  
+width:100%;
+height:40px;
+background-color: rgb(233, 7, 56);
+padding-top: 5px;
+top: 350;
+left:0;
+z-index:500;
+}
+ #menu a{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+ }
+ 
+#menu a:hover{
+color: #5077bd;
+}
+#footer{ 
+width: 100%;
+height: 40px;
+background-color: rgb(233, 7, 56);
+padding-top: 12px;
+}
+#footer a{
+color:#ffffff;
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+text-decoration:none;
+font-weight: 800px;
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+width: 50%;
+float:left;
+}
+#footer a:hover{
+color: #5077bd;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    background: #1ab44e;
+}
+
+.container form {
+    width: 700px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.col .title {
+    font-size: 20px;
+    color: rgb(237, 55, 23);
+    padding-bottom: 5px;
+}
+
+.col .inputBox {
+    margin: 15px 0;
+}
+
+.col .inputBox label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .inputBox input,
+.col .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.col .inputBox input:focus,
+.col .inputBox select:focus {
+    border: 1px solid #000;
+}
+
+.col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.col .flex .inputBox {
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit_btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: rgb(1, 143, 34);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.container form .submit_btn:hover {
+    background: #3d17fb;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
